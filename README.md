@@ -9,9 +9,10 @@
 ## Usage, install and forget
 
 ### Option 1 (fast)
-Run `wget https://raw.githubusercontent.com/basnijholt/ipynb_git_filters/master/ipynb_filter.py && echo "*.ipynb filter=ipynb_filter" >> .gitattributes && python ipynb_filter.py`
+`cd` to project root and run `wget https://raw.githubusercontent.com/basnijholt/ipynb_git_filters/master/ipynb_filter.py && echo "*.ipynb filter=ipynb_filter" >> .gitattributes && python ipynb_filter.py && rm ipynb_filter.py`
 
 ### Option 2 (manual, slow)
 1. Copy `ipynb_filter.py` into your project root
 2. Add the following line to your `.gitattributes`: `*.ipynb filter=ipynb_filter`
-3. run `python ipynb_filter.py`
+3. Run `python ipynb_filter.py`
+4. Remove the file with 'rm ipynb_filter.py'
